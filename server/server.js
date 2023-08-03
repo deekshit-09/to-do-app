@@ -31,7 +31,7 @@ var cat="";
 var presentcat=""
 
 
-const port=5000;
+const port = process.env.PORT || 5000;
 app.post("/api/add",(req,res)=>{
   const item = req.body.item;
   arr.push(item);
